@@ -18,9 +18,34 @@ console.log(checkEvenorOdd(15));
 
 // Loops
 // Function that takes a number `n` as an argument and prints all numbers from 1 to `n`
-function printAllBumberstoN (n){
-    if (n <= 0){
-        return
-        // Continue later due to low battery
+function printAllNumberstoN(n){
+    for (let i = 1; i<= n; i++){
+        console.log(i)
     }
 }
+printAllNumberstoN(15);
+
+// Function to take a number `n` as an argument and prints even numbers to `n`
+function printEvenNumberstoN(n){
+    for (let i = 1; i<=n; i++){
+        if (i % 2 === 0){
+            console.log(i)
+        }
+    }
+}
+printEvenNumberstoN(14);
+
+// Function that takes a number `n` as an argument and calculates the factorial of `n`
+function factorialCalc(n){
+   if (n === 0 || n ===1){
+    return 1; // This code is for executing that the factorial of both 0 and 1 is 1
+   } else {
+    let result = 1;
+    for (let i = 1; i<=n; i++){
+        result *= i; //Multiplies result by each number from 2 to n 
+        // The above statement is also the same as result = result * i
+    }
+    return result;
+   }
+}
+console.log(factorialCalc(7));
