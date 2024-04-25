@@ -15,3 +15,12 @@ console.log(checkEvenorOdd(14));
 // returns "The number is even"
 console.log(checkEvenorOdd(15));
 // returns "The number is odd"
+
+// Loops
+// Function that takes a number `n` as an argument and prints all numbers from 1 to `n`
+function printAllBumberstoN (n){
+    if (n <= 0){
+        return
+        // Continue later due to low battery
+    }
+}
