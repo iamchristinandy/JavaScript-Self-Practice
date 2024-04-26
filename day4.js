@@ -26,3 +26,16 @@ function MultipliesAllNumbers(AllMultiplicants){
 }
 let AllMultiplicants = [2,4,6,8,10,12];
 console.log(MultipliesAllNumbers(AllMultiplicants));
+
+// Function that takes an array of strings as an argument and returns the longest string in the array
+function returntheLongestString (names){
+    let longestname = "";
+    for (let i=0; i< names.length; i++){
+        if(names[i].length > longestname.length){
+            longestname = names[i];
+        }
+    } 
+    return longestname;
+}
+let names = ['Andrews', 'Melissa', 'Jephthah', 'Japheth', 'Gideon', 'Aquila', 'Mary', 'Salomey', 'Abigail'];
+console.log(returntheLongestString(names));
