@@ -1,0 +1,43 @@
+<!-- Entering DOM Manipulatio  -->
+<!-- Create an HTML page with a button. -->
+<!-- Write JavaScript code that changes the text of a paragraph when the button is clicked. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page with a Button - To Be Linked with day7.js</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <p id="OriginalText"></p>
+    <button onclick="changeText()">Click to show text change</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("OriginalText").innerText = "The Button has been clicked";
+        }
+    </script>
+</body>
+</html>
