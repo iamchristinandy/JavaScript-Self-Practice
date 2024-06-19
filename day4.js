@@ -17,6 +17,8 @@ function addAllNumbers (AllNumbers){
 let AllNumbers = [4,8,12,16]
 console.log(addAllNumbers(AllNumbers));
 
+
+// Function that multiplies all the numbers in an array
 function MultipliesAllNumbers(AllMultiplicants){
     let results = 1; // Initializes the result of the multiplication to 1
     for (let i=0; i < AllMultiplicants.length; i++){ // A for loop to iterate the numbers in the array
