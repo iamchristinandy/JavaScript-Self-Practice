@@ -4,15 +4,15 @@
 
 let person = {
     firstName: "Andrews",
+    middleName: "Kwafo",
     surname: "Baah",
-    otherNames: "Kwafo",
     age: 23,
     profession: "frontend Developer with UI background",
 }
-console.log(person);
+// console.log(person);
 
 //Combining the names properties in the object to form a sentence
-console.log(`${person.firstName} ${person.otherNames} ${person.surname} is my full name`);
+console.log(`${person.firstName} ${person.middleName} ${person.surname} is my full name`);
 
 // Function that takes an object as an argument and prints out all its properties and values
 function printAllProperties(employee){
