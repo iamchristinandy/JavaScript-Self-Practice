@@ -38,6 +38,11 @@ function ArraySort(array){
 }
 
 // In an example
-let array = [64, 21, 19, 48, 10];
-let bubblesortedArr = ArraySort(array);
-console.log("Sorted array is ", bubblesortedArr);
+// let array = [64, 21, 19, 48, 10];
+// let bubblesortedArr = ArraySort(array);
+// console.log("Sorted array is ", bubblesortedArr);
+
+// In a second example
+let array = [43, 44, 45, 56, 98, 101, 234]
+let bubbleSortedArr = ArraySort(array);
+console.log("List of the sorted array is", bubbleSortedArr);
