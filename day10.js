@@ -40,3 +40,17 @@ function RemoveDuplicated(array){
 let arrays = [2,2,4,5,6,7,8,9,9,10,11,12,13,13,25,30,25];
 let arrayWithoutDuplicates = RemoveDuplicated(arrays);
 console.log(arrayWithoutDuplicates);
+
+// A function that takes an object as input and returns an array of its keys
+function TakeArrayKeys(){
+    let object = {
+        firstname: Andrews,
+        middlename: Kwafo,
+        lastname: BroadcastChannel,
+        age: 23
+    }
+    for (i=0; i <= object.length; i++){
+        return object[i];
+    }
+    console.log(i);
+}
