@@ -42,15 +42,22 @@ let arrayWithoutDuplicates = RemoveDuplicated(arrays);
 console.log(arrayWithoutDuplicates);
 
 // A function that takes an object as input and returns an array of its keys
-function TakeArrayKeys(){
-    let object = {
-        firstname: Andrews,
-        middlename: Kwafo,
-        lastname: BroadcastChannel,
-        age: 23
+function TakeArrayKeys(object){
+    let keys = [];
+    for (let key in object){
+        if (object.hasOwnProperty(key)){
+            keys.push(key);
+        }
     }
-    for (i=0; i <= object.length; i++){
-        return object[i];
-    }
-    console.log(i);
+    return keys;
 }
+// Using in an example
+let object = {
+    firstname: 'Andrews',
+    middlename: 'Kwafo',
+    lastname: 'Baah',
+    age: 23
+}
+
+let keysArray = TakeArrayKeys(object);
+console.log(keysArray);
