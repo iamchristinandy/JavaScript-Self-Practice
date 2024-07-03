@@ -63,18 +63,31 @@ let keysArray = TakeArrayKeys(object);
 console.log(keysArray);
 
 // Writing a function to merge two objects into one
-function MergeObject(){
-    let object1 = {
-        name: 'Andrews',
-        middle: 'Kwafo',
-        last: 'Baah'
-    }
-    let object2 = {
-        names: 'Dora',
-        middles:'Melissa',
-        lasts: 'Aryee'
-    }
-    return object1 && object2
+function MergeObject(obj1, obj2){
+        let mergedObjects = {};
+        for (let key in obj1){
+            if (obj1.hasOwnProperty(key)){
+                mergedObjects[key] = obj1[key];     
+            }
+        }
+        for (let key in obj2){
+            if (obj2.hasOwnProperty(key)){
+                mergedObjects[key] = obj2[key];
+            }
+        }
+    return mergedObjects;
 }
 
-console.log (object1 && object2);
+// Usage in an example
+let object1 = {
+    name: 'Andrews',
+    middle: 'Kwafo',
+    last: 'Baah'
+}
+let object2 = {
+    names: 'Dora',
+    middles:'Melissa',
+    lasts: 'Aryee'
+}
+let mergedObjects = MergeObject(object1, object2);
+console.log (mergedObjects);
