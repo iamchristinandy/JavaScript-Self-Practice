@@ -91,3 +91,36 @@ let object2 = {
 }
 let mergedObjects = MergeObject(object1, object2);
 console.log (mergedObjects);
+
+// Writing a function that deep clone an object
+function deepClone(item){
+    if (item === null || typeof item !== 'object'){
+        return item;
+    }
+
+    // An array to hold values
+    let clonedObj = Array.isArray(item) ? [] : {};
+
+    // Recursively copy properties
+    for (let key in item){
+        if (item.hasOwnProperty(key)){
+            clonedObj[key]= deepClone(item[key]);
+        }
+    }
+    return clonedObj;
+}
+
+// Use in an example
+let employer1 = {
+    name: 'Andrews Baah Kwafo',
+    age: 23,
+    employmentdate: '23rd January 2024'
+}
+let employer2 = deepClone(employer1);
+console.log(employer2); // Deep clone of employer 1
+console.log(employer1);
+
+employer2.name = 'Dora Melissa Aryee';
+
+console.log(employer1);
+console.log(employer2);
