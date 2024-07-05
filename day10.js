@@ -124,3 +124,23 @@ employer2.name = 'Dora Melissa Aryee';
 
 console.log(employer1);
 console.log(employer2);
+
+// Writing a higher-order function that takes a callback and applies it to every element in an array
+
+function appplyToEach(arr, callback){
+    for (let i = 0; i<arr.length; i++){
+        // Making sure the callback affects each element of the array
+        arr[i] = callback(arr[i]);
+    }
+    // Return the modified array
+    return arr; 
+}
+
+// Definining the callback
+function cubenumbers(num){
+    return num * num * num;
+}
+
+let numbers = [4, 5, 6, 7, 8]
+let cubednumbers = appplyToEach(numbers, cubenumbers);
+console.log(cubednumbers);
