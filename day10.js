@@ -144,3 +144,23 @@ function cubenumbers(num){
 let numbers = [4, 5, 6, 7, 8]
 let cubednumbers = appplyToEach(numbers, cubenumbers);
 console.log(cubednumbers);
+
+// Writing a function that returns a closure, which encapsulates private data
+function CreateCounter(){
+    // Variable for private data
+    let count = 11;
+
+    // Closure that interacts with the privacy data
+    function increment(){
+        count ++
+        return count;
+    }
+    // Return the closure
+    return increment;
+}
+// Create a counter instance
+const counter = CreateCounter();
+
+console.log(counter());
+console.log(counter());
+console.log(counter());
