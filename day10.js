@@ -164,3 +164,19 @@ const counter = CreateCounter();
 console.log(counter());
 console.log(counter());
 console.log(counter());
+
+// Second function that returns a closure, which encapsulates private data
+
+function PrintAddedNames(){
+    // Object for names
+    var names = ['Andrews', 'Dora', 'Israel', 'Priscilla', 'Obed'];
+    
+    // Closure that interacts with private data
+    function AddName(){
+        var newName = 'Dave';
+        names.push(newName);
+    console.log(names);
+    }
+    AddName();
+}
+PrintAddedNames()
