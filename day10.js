@@ -179,4 +179,35 @@ function PrintAddedNames(){
     }
     AddName();
 }
-PrintAddedNames()
+PrintAddedNames();
+
+// Creating a function that makes anAJAX request using promises
+function fetchData(url){
+    // Returning promises from the fetch API
+    return fetch(url)
+    .then(response =>{
+        // Check if the response is ok
+        if (!response.ok){
+            throw new Error('Network response was okay ' + response.status);
+        }
+        // Parse the JSON from the response
+        return response.json();
+    })
+    .then(data => {
+        // Handle the data
+        console.log(data);
+        return data; // Return the data to allow further chaining if needed
+    })
+    .catch(error =>{
+        // Handle any errors that occured during the fetch
+        console.error("There has been a problem with your fetch operation: ", error);
+    });
+}
+
+// Usage example: Fetching data from a public API
+const apiURL = 'https://api.example.com/data';
+fetchData(apiURL)
+    .then(data =>{
+        // Do something with the fetched data
+        console.log('Fetched Data:'. data);
+    });
