@@ -204,10 +204,31 @@ function fetchData(url){
     });
 }
 
-// Usage example: Fetching data from a public API
+// Using async/await with a parameterized fetchData function
+async function fetchData(apiURL) {
+    try {
+        const response = await fetch(apiURL);
+        if (!response.ok) {
+            throw new Error('Network response was not okay');
+        }
+        const data = await response.json();
+        console.log('Fetched Data:', data); // Logging fetched data
+        return data; // Optionally return data for further processing
+    } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+        // Optionally re-throw the error to propagate it further
+        throw error;
+    }
+}
+
+// Example usage: Fetching data from a public API
 const apiURL = 'https://api.example.com/data';
 fetchData(apiURL)
-    .then(data =>{
+    .then(data => {
         // Do something with the fetched data
-        console.log('Fetched Data:'. data);
+        console.log('Fetched Data:', data);
+    })
+    .catch(error => {
+        // Handle errors from fetchData
+        console.error('Error in fetching data:', error);
     });
