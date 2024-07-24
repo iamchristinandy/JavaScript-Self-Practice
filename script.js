@@ -2,7 +2,7 @@
 function addItem(){
     // Get input element and its value
     const input = document.getElementById('userInput');
-    const inputValue = input.ariaValueMax;
+    const inputValue = input.value;
 }
 
 // Checking of the property isn't empty
