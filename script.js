@@ -11,10 +11,14 @@ if (inputValue.trim() !==''){
     const newItem = document.createElement('li');
     newItem.textContent = inputValue;
 
+    // Get the list element and append the new list item
+    const list = document.getElementById('itemList');
+    list.appendChild(newItem);
+
     // Clear the input field
     input.value = '';
 } else {
-    alert('Please enter something')
+    alert('Please enter something');
 }
 
 // Attach an event listener to the button
