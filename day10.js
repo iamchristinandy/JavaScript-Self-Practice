@@ -232,3 +232,8 @@ fetchData(apiURL)
         // Handle errors from fetchData
         console.error('Error in fetching data:', error);
     });
+
+    // Hi, been a long time here
+    // Just testing my skills today to have a feel of what I've missed for a while due to my brother's wedding vibes 😁
+    var MyFirstName = 'Andrews'
+    console.log(MyFirstName);
