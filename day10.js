@@ -237,3 +237,9 @@ fetchData(apiURL)
     // Just testing my skills today to have a feel of what I've missed for a while due to my brother's wedding vibes 😁
     var MyFirstName = 'Andrews'
     console.log(MyFirstName);
+
+    // Okay, so, back to work
+    // Implementing a modal dialog that opens and closes based on user interactions
+    // That's my next JavaScript Exercise to be done hopefully tomorrow
+    // You can follow through in the subsequent commits I'll make on this repository.
+    // Have a blast 🤗
