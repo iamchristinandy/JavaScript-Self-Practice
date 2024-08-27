@@ -38,3 +38,5 @@ window.addEventListener('keydown', handleKeydown);
 // `keypress`: Deprecated, but was used to detect keys that produce a character
 // `event.key`: Returns the key value as a string. Example: "Enter"
 // `event.code`: Returns the physical keycode 9. Example: "KeyB", "ArrowLeft"
+
+// Next up: Rewriting existing functions using arrow functions and template literals.
