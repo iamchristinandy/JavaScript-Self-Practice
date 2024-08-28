@@ -243,3 +243,9 @@ fetchData(apiURL)
     // That's my next JavaScript Exercise to be done hopefully tomorrow
     // You can follow through in the subsequent commits I'll make on this repository.
     // Have a blast 🤗
+
+    // Next up: Rewriting existing functions using arrow functions and template literals.
+// Example 1: Rewriting calling of a name using arrow functions
+
+const greet = (names) => `Hello, ${names}`;
+console.log(greet('Alice')); // The output will be "Hello Alice"
