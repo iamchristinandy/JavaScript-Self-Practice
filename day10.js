@@ -249,3 +249,9 @@ fetchData(apiURL)
 
 const greet = (names) => `Hello, ${names}`;
 console.log(greet('Alice')); // The output will be "Hello Alice"
+
+// Rewriting a function that performs multiple operations
+function selfIntroduction (YourFullName, YourAge){
+    return `I\'m called ${YourFullName} and I\'m ${YourAge} years old`
+}
+console.log(selfIntroduction('Andrews', 24));
