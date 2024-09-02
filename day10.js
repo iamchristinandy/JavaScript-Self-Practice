@@ -254,4 +254,9 @@ console.log(greet('Alice')); // The output will be "Hello Alice"
 function selfIntroduction (YourFullName, YourAge){
     return `I\'m called ${YourFullName} and I\'m ${YourAge} years old`
 }
-console.log(selfIntroduction('Andrews', 24));
+console.log(selfIntroduction('Andrews', 24)); // Output: I'm called Andrews and I'm 24 years old
+
+// Rewriting the above function using arrow functions
+const introduction = (MentionYourName, MentionYourAge) => 
+    `I\'m called ${MentionYourName} and I am ${MentionYourAge} years old.`;
+console.log(introduction('Andrews Baah Kwafo', '24'));
