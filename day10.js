@@ -260,3 +260,8 @@ console.log(selfIntroduction('Andrews', 24)); // Output: I'm called Andrews and 
 const introduction = (MentionYourName, MentionYourAge) => 
     `I\'m called ${MentionYourName} and I am ${MentionYourAge} years old.`;
 console.log(introduction('Andrews Baah Kwafo', '24'));
+
+// Still practising on this code
+const DateOfBirth = (StateYourBirthDate) =>
+    `I\'m Andrews and I was born on ${StateYourBirthDate}.`
+console.log(DateOfBirth("21st July, 2000"));
