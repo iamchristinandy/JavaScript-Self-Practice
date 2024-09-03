@@ -265,3 +265,9 @@ console.log(introduction('Andrews Baah Kwafo', '24'));
 const DateOfBirth = (StateYourBirthDate) =>
     `I\'m Andrews and I was born on ${StateYourBirthDate}.`
 console.log(DateOfBirth("21st July, 2000"));
+
+
+// Checking up on my health
+const HealthCheck = (HealthQuestionAnswer) =>
+    `I am Andrews, and I have not been diagnosed with ${HealthQuestionAnswer}.`
+console.log(HealthCheck("Malaria"));
