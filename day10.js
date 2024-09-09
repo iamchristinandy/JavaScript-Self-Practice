@@ -271,3 +271,10 @@ console.log(DateOfBirth("21st July, 2000"));
 const HealthCheck = (HealthQuestionAnswer) =>
     `I am Andrews, and I have not been diagnosed with ${HealthQuestionAnswer}.`
 console.log(HealthCheck("Malaria"));
+
+// Been a long while here
+// Let me first test myself with what I have learnt so far, in order for me to upgrade on today's test
+// Checks on my heartbeat
+const HeartBeatCheck = (MyName , BloodPressureMachineRead) =>
+    `Dear ${MyName}, your blood pressure is ${BloodPressureMachineRead} mmHg.`
+console.log(HeartBeatCheck("Andrews", "119/79"));
