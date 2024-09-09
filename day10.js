@@ -278,3 +278,8 @@ console.log(HealthCheck("Malaria"));
 const HeartBeatCheck = (MyName , BloodPressureMachineRead) =>
     `Dear ${MyName}, your blood pressure is ${BloodPressureMachineRead} mmHg.`
 console.log(HeartBeatCheck("Andrews", "119/79"));
+
+// Let's do another one. This time, about my water drinking habits
+const WaterDrinkingHabit = (TimesOfRefresh, NumberOfLitresDrank) =>
+    `Andrews, you have refreshed ${TimesOfRefresh} today, making you drink ${NumberOfLitresDrank} litres of watee this day. Well done.`;
+console.log(WaterDrinkingHabit(8, 16));
