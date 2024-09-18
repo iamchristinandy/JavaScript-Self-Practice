@@ -283,3 +283,28 @@ console.log(HeartBeatCheck("Andrews", "119/79"));
 const WaterDrinkingHabit = (TimesOfRefresh, NumberOfLitresDrank) =>
     `Andrews, you have refreshed ${TimesOfRefresh} today, making you drink ${NumberOfLitresDrank} litres of watee this day. Well done.`;
 console.log(WaterDrinkingHabit(8, 16));
+
+// Welcome myself back
+// Destructuring objects
+// Example without destructuring
+const TellMeYourName = {
+    TheFirstName: 'Andrews',
+    TheMiddleName: 'Kwafo',
+    TheLastName: 'Baah'
+}
+
+const the1stName = TellMeYourName.TheFirstName;
+const the2ndName = TellMeYourName.TheMiddleName;
+console.log(the1stName);
+
+// Example with destructuring
+const theFullName = {
+    fullFirstName: 'Andrews',
+    fullMiddleName: 'Kwafo',
+    fullLastName: 'Baah'
+}
+
+const {fullFirstName, fullMiddleName, fullLastName} = theFullName;
+console.log(fullFirstName);
+
+
