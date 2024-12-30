@@ -307,4 +307,9 @@ const theFullName = {
 const {fullFirstName, fullMiddleName, fullLastName} = theFullName;
 console.log(fullFirstName);
 
+// Such a long time I logged in here to keep pratising. Well, this is just a test to see if I still remember what I've learnt so far.
+// Moving in
+// Printing my name
 
+let myFullname = "Andrews Baah Kwafo";
+console.log(myFullname);
