@@ -313,3 +313,7 @@ console.log(fullFirstName);
 
 let myFullname = "Andrews Baah Kwafo";
 console.log(myFullname);
+
+// So 2024 has been my year where I have made the most commits to my GitHub repository. I never thought I could do this. But I did it. I'm proud of myself.
+// In 2025, I am going to be better with programming, learn more languages and try to build more projects.
+// See you all in 2025. I'm going to be a better programmer. 😁🤗
