@@ -317,3 +317,8 @@ console.log(myFullname);
 // So 2024 has been my year where I have made the most commits to my GitHub repository. I never thought I could do this. But I did it. I'm proud of myself.
 // In 2025, I am going to be better with programming, learn more languages and try to build more projects.
 // See you all in 2025. I'm going to be a better programmer. 😁🤗
+
+// A very warm happy new year to every developer out there doing much to make the tech space a better place to be
+// In all the various setbacks in your programming lifestyle, I can only say "Don't give up"
+// If you are going to pull through the various setbacks, invest in your career and education, you will end your 2025 as a better programmer than you might every think.
+// A happy new year to you once again. Cheers 🥂
