@@ -29,3 +29,8 @@ function sum (d, e){
     return d + e;
 }
 console.log(a);
+
+function multiply (f, g){
+    return f*g;
+}
+console.log(multiply(50, 60));
