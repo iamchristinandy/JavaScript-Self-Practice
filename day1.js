@@ -22,3 +22,10 @@ let myFullName = 'Andrews Baah Kwafo';
 let myGender = 'male';
 
 console.log(`I am ${myFullName}. I am ${myAge} years of age and I am a ${myGender}.`);
+
+// Practising my arithmetic in Javascript again
+let a = sum (15, 20);
+function sum (d, e){
+    return d + e;
+}
+console.log(a);
