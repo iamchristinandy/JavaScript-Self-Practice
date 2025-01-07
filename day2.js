@@ -35,3 +35,14 @@ function checknumber(num){
 console.log(checknumber(14));
 console.log(checknumber(156));
 console.log(checknumber(15));
+
+// Writing a function that prints whether a the quotient of a number is even or odd
+
+function checkquotient(a, b){
+    if ((a/b) % 2===0){
+        return "The quotient of the division is even";
+    } else{
+            return "The quotient of the division is odd";
+        }
+    }
+console.log(checkquotient(55,11));
