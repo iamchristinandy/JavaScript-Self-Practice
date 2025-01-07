@@ -34,3 +34,8 @@ function multiply (f, g){
     return f*g;
 }
 console.log(multiply(50, 60));
+
+function subtract (i,j){
+    return i-j;
+}
+console.log (subtract(120,49));
