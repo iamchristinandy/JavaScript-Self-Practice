@@ -59,3 +59,27 @@ function CheckTheQuotient (x,y){
 }
 console.log (CheckTheQuotient(95, 5));
 console.log (CheckTheQuotient(120, 5));
+
+// Function to check if a number is prime or not
+function checkPrime (a){
+    if (a === 1){
+        // Checking if the number inputed is 1
+        return `${a} is not a prime number`;
+    } else if (a===2){
+        // Because 2 is a special prime number, this checks whether the inputed number is 2, hence printing it is an even prime
+        return `${a} is a even prime number`;
+    } else {
+        for (let i=2; i<a; i++){
+            // Checking if the number is divisible by any number from 2 to the number itself
+            if (a % i === 0){
+                return `${a} is not a prime number`;
+                // If the number is divisible by any number from 2 to the number itself, it is not a prime number
+            }
+        }
+        // If no divisors are found, the number is prime
+        return `${a} is a prime number`;
+    }
+}
+console.log(checkPrime(1));
+console.log(checkPrime(2)); 
+console.log(checkPrime(17));
