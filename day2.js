@@ -52,9 +52,10 @@ console.log(checkquotient(55,11));
 function CheckTheQuotient (x,y){
         const quotient = x/y;
         if ((x/y) % 2 === 0){
-        return  `${quotient}, the quotient of the division is an even number`
+        return  `${quotient}, the quotient of the division, is an even number`
     } else {
-        return `${quotient}, the quotient of the division is an odd number`
+        return `${quotient}, the quotient of the division, is an odd number`
     }
 }
 console.log (CheckTheQuotient(95, 5));
+console.log (CheckTheQuotient(120, 5));
