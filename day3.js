@@ -49,3 +49,30 @@ function factorialCalc(n){
    }
 }
 console.log(factorialCalc(7));
+
+// Welcoming myself back after a while
+// Function to print the Fibonacci series less than 100
+// The Fibonacci series is a series of numbers in which each number ( Fibonacci number ) is the sum of the two preceding numbers.
+function fibonacciSequence(){
+    // Declaring the function
+    let x = 0, y = 1, z;
+    // Declaring variables
+    console.log(x);
+    // Printing first Fibonacci number
+    console.log(y);
+    // Printing second Fibonacci number
+    z = x + y;
+    // Adding the first and second Fibonacci numbers to generate the third
+    while (z < 100){
+        // Loop to generate the rest of the Fibonacci sequence less than 100
+        console.log(z);
+        // Printing the rest of the Fibonacci sequence from the third to the number less than 100
+        x = y;
+        // After each loop, the value of the first Fibonacci number is replaced by the second
+        y = z;
+        // The value of the second Fibonacci number is replaced by the third also
+        z = x + y;
+        // Loop continues to generate the rest of the Fibonacci sequence
+    }
+}
+fibonacciSequence();
