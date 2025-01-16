@@ -41,3 +41,15 @@ function returntheLongestString (names){
 }
 let names = ['Andrews', 'Melissa', 'Jephthah', 'Japheth', 'Gideon', 'Aquila', 'Mary', 'Salomey', 'Abigail'];
 console.log(returntheLongestString(names));
+
+// Going through arrays
+
+// An array to print numbers from 1 to 20
+let numbers = [];
+// Declaring the array variable
+for (let i = 1; i<=20; i++){
+    // For loop to reiterate the numbers from 1 to 20
+    numbers.push(i);
+    // Populating the array with the numbers from 1 to 20
+}
+console.log(numbers);
