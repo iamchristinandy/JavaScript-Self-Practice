@@ -53,3 +53,18 @@ for (let i = 1; i<=20; i++){
     // Populating the array with the numbers from 1 to 20
 }
 console.log(numbers);
+
+// Function to rearrange mixed up array of numbers from the biggest to the smallest
+let mixedNumbers = [14, 12, 5, 64, 23, 15,18, 22];
+// Declaring the mixed up array of numbers
+function rearrangeNumbers (mixedNumbers){
+    // Function to rearrange the mixed up array of numbers
+    return mixedNumbers.sort(function(a,b){
+        // Using the sort method to rearrange numbers in the array
+        return b-a;
+        // If the second number is bigger than the first number, it is placed before the first number
+        // The iteration goes on and on until the biggest number is placed first and the total numbers in the array has all been sorted out
+    });
+}
+console.log(rearrangeNumbers(mixedNumbers));
+// Print the rearranged array of numbers
