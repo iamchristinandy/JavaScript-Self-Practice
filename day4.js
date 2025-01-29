@@ -82,3 +82,4 @@ function checkPalindrome (string){
 }
 console.log(checkPalindrome('madam'));
 console.log(checkPalindrome('answer'));
+console.log(checkPalindrome('script'));
