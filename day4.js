@@ -68,3 +68,17 @@ function rearrangeNumbers (mixedNumbers){
 }
 console.log(rearrangeNumbers(mixedNumbers));
 // Print the rearranged array of numbers
+
+// Function to check if a string is a palindrome or not
+function checkPalindrome (string){
+    let reversedstring = string.split('').reverse().join('');
+    // Splitting the word into an array of characters, reversing the array and joining the array back into a string
+    if (string === reversedstring){
+        // Check if the word is the same as the reversed word
+        return `Yes, "${string}" is a palindrome`;
+    } else {
+        return `No, "${string}" is not a palindrome`;
+    }
+}
+console.log(checkPalindrome('madam'));
+console.log(checkPalindrome('answer'));
