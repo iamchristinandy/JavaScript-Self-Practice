@@ -84,4 +84,4 @@ console.log(checkPalindrome('madam'));
 console.log(checkPalindrome('answer'));
 console.log(checkPalindrome('script'));
 
-// Been a while. I'll be back very very soon
+// Been a while. I'll be back very very soon 🤨
