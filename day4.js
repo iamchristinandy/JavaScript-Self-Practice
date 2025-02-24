@@ -85,3 +85,15 @@ console.log(checkPalindrome('answer'));
 console.log(checkPalindrome('script'));
 
 // Been a while. I'll be back very very soon 🤨
+
+// Creating a function to generate random Hex codes
+function randomHexColor() {
+    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    // Explanation of the template string
+    // # - Usually used at the beginning of hexadecimal colour codes
+    // Math.floor - Rounds off the decimal number to the nearest whole number. It has been put in a bracket because at the end of the computation, we should get a hexadecimal code
+    // Math.random - Generates a random number between 0 and 1
+    // 16777215 - The highest number in hexadecimal code. That is #ffffff, representing white
+    // toString(16) - Converts the number to a hexadecimal code
+}
+console.log(randomHexColor()); // Output: #f0a1b2 (random)
