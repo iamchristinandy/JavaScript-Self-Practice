@@ -108,3 +108,18 @@ function convertCelciusToFahrenheit (celcius){
 }
 
 console.log(convertCelciusToFahrenheit(100));
+
+// Function to generate random password
+function generatePassword(length) {
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
+    // Declaring the characters that will be used to generate the password
+    let password = "";
+    // Initialising the password to print out in the end as a string
+    for (let i = 0; i < length; i++) {
+        // For loop to iterate the length of the password
+        password += chars[Math.floor(Math.random() * chars.length)];
+        // can be written as password = password + chars[Math.floor(Math.random() * chars.length)];
+    }
+    return password;
+}
+console.log(generatePassword(15));
