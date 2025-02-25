@@ -97,3 +97,14 @@ function randomHexColor() {
     // toString(16) - Converts the number to a hexadecimal code
 }
 console.log(randomHexColor()); // Output: #f0a1b2 (random)
+
+// Function to convert celcius to fahrenheit
+function convertCelciusToFahrenheit (celcius){
+    // Declaring the function
+    let fahrenheit = (celcius * 9/5) + 32;
+    // Stating the formula for converting celcius to fahrenheit
+    return fahrenheit;
+    // Print the value of the Fahrenheit temperature
+}
+
+console.log(convertCelciusToFahrenheit(100));
