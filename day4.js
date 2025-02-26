@@ -123,3 +123,22 @@ function generatePassword(length) {
     return password;
 }
 console.log(generatePassword(15));
+
+// Function to count vowels in a string
+function countVowels(string) {
+    let count = 0;
+    // Initialising the count of the vowels to zero
+    const vowels = "aeiou";
+    // Declaring the vowels to be counted
+    for (let char of string) {
+        // For loop to iterate the characters in the string
+        if (vowels.includes(char)) {
+            // Check if the character is a vowel
+            count++;
+            // Increment the count of the vowels
+        }
+    }
+    return count;
+    // Print the total number of vowels in the string
+}
+console.log(countVowels("Andrews"));
