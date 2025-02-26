@@ -142,3 +142,10 @@ function countVowels(string) {
     // Print the total number of vowels in the string
 }
 console.log(countVowels("Andrews"));
+
+// Function to print a strong to complete lower case letters
+function toLowerCase(string) {
+    return string.toLowerCase();
+    // Convert the string to lower case
+}
+console.log(toLowerCase("ANDREWS"));
