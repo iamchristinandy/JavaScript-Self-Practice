@@ -149,3 +149,17 @@ function toLowerCase(string) {
     // Convert the string to lower case
 }
 console.log(toLowerCase("ANDREWS"));
+
+// Function to filter even numbers in an array
+function filterEvenNumbers (digits){
+    let EvenNumbers = [];
+    // Declare an array to store the even numbers
+    for (let i=0; i<digits.length; i++){
+        if (digits[i] % 2 === 0){
+            EvenNumbers.push(digits[i]);
+        }
+        }
+        return EvenNumbers;
+    }
+let digits = [1,2,3,5,6,7,10,12,13,48, 55, 68];
+console.log(filterEvenNumbers(digits));
