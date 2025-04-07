@@ -163,3 +163,6 @@ function filterEvenNumbers (digits){
     }
 let digits = [1,2,3,5,6,7,10,12,13,48, 55, 68];
 console.log(filterEvenNumbers(digits));
+
+// Been a while here. Right
+// I'll be stepping up soon
